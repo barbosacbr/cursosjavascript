@@ -51,8 +51,34 @@ password:"pepitodaides91",
 },]
 
 
-// Imprimir o password do garfield
+let repetir = false
+while(repetir != true){
+let emailUsuario = prompt("Digite seu e-mail")
+let passwordUsuario = prompt ("Digite sua senha")
 
+let encontrar = dadosClientes.find(element => element.email == emailUsuario && element.password == passwordUsuario)
+
+console.log(encontrar)
+    if(encontrar){
+        alert("Login efetuado com sucesso!!!")
+        repetir = true
+}else{
+    alert("E-mail ou senha incorreto")
+}
+}
+
+
+
+
+
+
+
+
+
+
+
+// Imprimir o password do garfield
+/* 
 let usuario = "gabriel@ides.com";
 let password = "ides87"
 
@@ -61,7 +87,7 @@ if(usuario == dadosClientes[8].email && password == dadosClientes[8].password){
 }else{
     console.log("NÃO FOI, WALLIS!!!!!!!!!!")
 }
-
+ */
 
 
 
