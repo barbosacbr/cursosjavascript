@@ -54,7 +54,7 @@ password:"pepitodaides91",
 let repetir = false
 while(repetir != true){
 let emailUsuario = prompt("Digite seu e-mail")
-let passwordUsuario = prompt ("Digite sua senha")
+let passwordUsuario = prompt ("Digite sua senha") 
 
 let encontrar = dadosClientes.find(element => element.email == emailUsuario && element.password == passwordUsuario)
 
